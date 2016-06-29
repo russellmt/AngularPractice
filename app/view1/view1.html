@@ -1,0 +1,10 @@
+<h1>Angular Calculator</h1>
+<div class="calculator">
+    <div class="io">{{ answer }}</div>
+    <div class="io">{{ calcText }}</div>
+    <div ng-repeat="row in values">
+        <button ng-repeat="buttonVal in row" ng-click="handleClick(buttonVal)">
+            {{ buttonVal }}
+        </button>
+    </div>
+</div>

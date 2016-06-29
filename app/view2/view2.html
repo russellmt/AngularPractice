@@ -1,0 +1,13 @@
+<h1>Angular Tic Tac Toe</h1>
+<div class="tic-tac-toe">
+    <table>
+        <tr ng-repeat="innerValues in values track by $index">
+            <td ng-repeat="value in innerValues track by $index" ng-click="handleClick(innerValues, $index, $parent.$index)">
+                {{ value }}
+            </td>
+        </tr>
+    </table>
+    <div>
+        {{ winningMessage }}
+    </div>
+</div>
